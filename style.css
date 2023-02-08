@@ -2410,7 +2410,15 @@ input {
         top: 100px;
     }
 
+    .hero {
+        height: 80vh;
+    }
+
     .hero #video {
+       display: none;
+    }
+
+    .hero button {
         display: none;
     }
 
@@ -2421,7 +2429,7 @@ input {
     .wrapper-title h1 {
         font-size: 24px;
         position: relative;
-        margin-top: 100px;
+        margin-top: 30px;
     }
 
     .wrapper-title {
@@ -2432,6 +2440,7 @@ input {
         text-align: center;
         color: white;
         width: 90vw;
+        line-height: 2em;
         font-size: 14px;
         margin-left: auto;
         margin-right: auto;
