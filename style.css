@@ -1335,10 +1335,9 @@ video {
 
 .wrapper-users {
     width: 50%;
-    padding-left: 10px;
+    padding-left: 20px;
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid rgb(173, 173, 173);
     align-items: center;
     justify-content: flex-start;
 }
@@ -1948,6 +1947,15 @@ video {
 .status-left p {
     font-size: 12px;
     width: 90%;
+}
+
+.status-left2 h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.desc-status {
+    font-size: 12px;
 }
 
 .status-right {
