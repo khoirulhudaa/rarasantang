@@ -1,5 +1,5 @@
 :root {
-    --gr: rgb(0, 233, 0);
+    --gr: rgb(0, 182, 0);
 }
 
 * {
@@ -346,11 +346,15 @@ li:hover {
 .img-side img {
     position: relative;
     left: -440px;
+    width: auto;
+    top: -300px;
+    height: 100%;
 }
 
 .img-side2 img {
     position: relative;
-    left: -840px;
+    left: -30px;
+    top: -300px;
 }
 
 .section2-side {
@@ -410,7 +414,7 @@ li:hover {
     margin-top: 20px;
     color: rgba(206, 206, 206, 0.836);
     width: 80%;
-    text-align: justify;
+    text-align: left;
     line-height: 1.8em;
 }
 
@@ -993,7 +997,7 @@ li:hover {
     padding-bottom: 0px;
     padding-left: 20px;
     background-color: #fff;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(192, 192, 192);
     display: flex;
     padding-right: 20px;
 }
@@ -1270,6 +1274,13 @@ video {
 }
 
 .wrapper-section2 {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-section2-b {
     width: 100vw;
     height: max-content;
     display: flex;
@@ -2149,8 +2160,38 @@ input {
         overflow-x: hidden;
     }
 
-    #hero {
-        height: 80vh;
+    .wrapper-section2-b {
+        flex-direction: column-reverse;
+    }
+    
+    .dots {
+        background-repeat: repeat;
+        width: 400px;
+        position: absolute;
+        height: auto;
+        top: 0;
+        z-index: -22;
+    }
+
+    .wrapper-card {
+        padding-left: 20px;
+    }
+
+    .listTask {
+        height: max-content;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .card-task {
+        width: 280px;
+        height: 80%;
+        transform: scale(0.9);
+        border-radius: 12px;
+        margin-right: 15px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 100px 100px 80px rgba(0, 0, 0, 0.07);
     }
 
     .fotoWeb {
@@ -2188,7 +2229,7 @@ input {
         width: 100vw;
         padding-top: 0px;
         margin-top: 0px;
-        padding-bottom: 40px;
+        padding-bottom: 0px;
         padding-left: 0px;
         z-index: 222222;
         display: flex;
@@ -2219,14 +2260,20 @@ input {
         padding-top: 20px;
     }
 
+    #section22 {
+        position: relative;
+        margin-top: 20px;
+    }
+
     .section2-side2 h2 {
         font-size: 26px;
         margin-top: 40px;
     }
 
     .section2-side p {
-        font-size: 14px;
+        font-size: 12px;
         width: 85vw;
+        text-align: left;
     }
 
     .btnRara {
@@ -2243,6 +2290,11 @@ input {
     }
 
     #web {
+        /* display: none; */
+        flex-direction: column-reverse;
+    }
+
+    #web img {
         display: none;
     }
 
@@ -2256,6 +2308,7 @@ input {
 
     .wrapper2 {
         left: 0;
+        width: 100vw;
     }
 
     .wrapper1 {
@@ -2264,21 +2317,23 @@ input {
         justify-content: flex-start;
     }
 
+    .section2-side h2 {
+        position: relative;
+        margin-top: 130px;
+    }
+
+    .wrapper1 p {
+        display: none;
+    }
+
     .img-side {
-        margin-top: 40px;
-        height: 320px;
-        width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        overflow: hidden;
-        border-radius: 20px;
-        background-size: cover;
+        display: none;
     }
 
     .img-side img {
-        background-size: cover;
-        top: -200px;
+        background-size: contain;
+        width: auto;
+        height: auto;
         position: relative;
     }
 
@@ -2303,6 +2358,7 @@ input {
     .img-side2-b {
         position: relative;
         left: 0px;
+        display: none;
     }
 
     .section2-side {
@@ -2353,10 +2409,6 @@ input {
         display: none;
     }
 
-    #hero {
-        height: 80vh;
-    }
-
     .wrapper-title h1 {
         font-size: 24px;
         position: relative;
@@ -2378,7 +2430,7 @@ input {
 
     .listTask {
         padding-left: 0;
-        margin-top: 0;
+        margin-top: 80px;
     }
 
     .section3 h1 {
@@ -2421,6 +2473,10 @@ input {
         padding-left: 10px;
     }
 
+    .contact h2 {
+        width: 55%;
+    }
+
     .btn-admin {
         margin-right: 32px;
     }
@@ -2436,7 +2492,7 @@ input {
     }
 
     .wrapperDesc-section5 {
-        left: -20px;
+        left: -30px;
         top: -200px;
     }
 
@@ -2449,6 +2505,7 @@ input {
     .wrapperDesc-section5 p {
         width: 85vw;
         font-size: 14px;
+        line-height: 2em;
     }
 
     .wrapper-artikel {
