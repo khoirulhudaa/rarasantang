@@ -43,12 +43,16 @@
             </div>
         </nav>
 
-        <div class="main" disabled>
-            <i class="las la-tools"></i>
+        <div class="main" id="myBtnmatkul">
+            <i class="las la-torah"></i>
         </div>
 
         <div class="main2" id="myBtnLink">
             <i class="las la-link"></i>
+        </div>
+
+        <div class="main3" id="myBtnstatus">
+            <i class="las la-plus-circle"></i>
         </div>
 
         <!-- Component hero -->
@@ -399,7 +403,8 @@
         <!-- Component contact for super admin -->
         <div class="contact">
             <h2>Hubungi admin rasaPide jika ada keperluan</h2>
-            <a target="__blank"
+            <a
+                target="__blank"
                 href="https://api.whatsapp.com/send?phone=+6289691600772&text=Hallo admin rarasantangPride"
             >
                 <button class="btn-admin">Hubungi</button>
@@ -554,6 +559,23 @@
                         <a href="#">
                             <button class="btn-link">Akses link</button>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Component modal fot games -->
+        <div id="myModalmatkul" class="modalmatkul">
+            <!-- Modal content -->
+            <div class="modal-contentmatkul">
+                <span class="closematkul">&times;</span>
+                <h2>matkul hari ini</h2>
+                <div class="wrapper-card-matkuls">
+                    <div class="card-matkul">
+                        <h3>metode numerik</h3>
+                        <small>Campus</small>
+                        <br />
+                        <div class="btn-matkul">12:00</div>
                     </div>
                 </div>
             </div>
@@ -808,6 +830,33 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Component modal for games -->
+
+        <!-- Component modal fot status -->
+        <div id="myModalstatus" class="modalstatus">
+            <!-- Modal content -->
+            <div class="modal-contentstatus">
+                <span class="closestatus">&times;</span>
+                <h2>Upload status</h2>
+                <div class="wrapper-games">
+                    <form>
+                       <div class="wrapper-form">
+                        <label for="link">Link video</label>
+                        <input type="text" name="link" id="link">
+                       </div>
+                       <div class="wrapper-form">
+                        <label for="judul">Judul video</label>
+                        <input type="text" name="judul" id="judul">
+                       </div>
+                       <div class="wrapper-form">
+                        <label for="deskripsi">Deskripsi video</label>
+                        <input type="text" name="deskripsi" id="deskripsi">
+                       </div>
+                       <button class="btn-form">Upload sekarang</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1179,6 +1228,34 @@
         };
 
         // Get the modal
+        var modalstatus = document.getElementById("myModalstatus");
+
+        // Get the button that opens the modal
+        // var btn = document.getElementById("myBtn");
+        // Get the button that opens the modal
+        var btnstatus = document.getElementById("myBtnstatus");
+
+        // Get the <span> element that closes the modal
+        var spanstatus = document.getElementsByClassName("closestatus")[0];
+
+        // When the user clicks the button, open the modal
+        btnstatus.onclick = function () {
+            modalstatus.style.display = "flex";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        spanstatus.onclick = function () {
+            modalstatus.style.display = "none";
+        };
+
+        // When the user clicks anywhere outstatus of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modalstatus) {
+                modalstatus.style.display = "none";
+            }
+        };
+
+        // Get the modal
         var modalside = document.getElementById("myModalSide");
 
         // Get the button that opens the modal
@@ -1231,6 +1308,34 @@
         window.onclick = function (event) {
             if (event.target == modallink) {
                 modallink.style.display = "none";
+            }
+        };
+
+        // Get the modal
+        var modalmatkul = document.getElementById("myModalmatkul");
+
+        // Get the button that opens the modal
+        // var btn = document.getElementById("myBtn");
+        // Get the button that opens the modal
+        var btnmatkul = document.getElementById("myBtnmatkul");
+
+        // Get the <span> element that closes the modal
+        var spanmatkul = document.getElementsByClassName("closematkul")[0];
+
+        // When the user clicks the button, open the modal
+        btnmatkul.onclick = function () {
+            modalmatkul.style.display = "flex";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        spanmatkul.onclick = function () {
+            modalmatkul.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modalmatkul) {
+                modalmatkul.style.display = "none";
             }
         };
 
